@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>NYT News Viewer</title>
+  <style>
+    body { font-family: Arial; margin: 2rem; background: #f7f7f7; }
+    #news-container { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1rem; }
+    .card { background: white; padding: 1rem; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    .card h3 { font-size: 1.1rem; }
+    .card a { color: #0077cc; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <h1>📰 Noticias del New York Times</h1>
+  <input type="number" id="year" placeholder="Año (ej. 2024)" value="2024">
+  <input type="number" id="month" placeholder="Mes (1-12)" value="1">
+  <button id="load">Cargar noticias</button>
+
+  <div id="news-container"></div>
+
+  <script src="main.js"></script>
+</body>
+</html>
